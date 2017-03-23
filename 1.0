@@ -1,0 +1,14 @@
+# -*- coding: UTF-8 -*-
+
+num = int(input())	#输入即将输入的数字串的个数
+egs = list()		#输入数字串
+n=1					#旋转数计数器
+for i in range(0,num):
+	egs.append(input())
+x = ''.join(egs)	#将数字串变成一个字符长串x
+for eg in egs:
+	if eg not in x:
+		n=n+1
+print (eg)
+print (x)
+print (n)
